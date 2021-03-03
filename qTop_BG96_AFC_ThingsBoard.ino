@@ -99,7 +99,7 @@ const char pass[] = "";
 
 // See https://thingsboard.io/docs/getting-started-guides/helloworld/
 // to understand how to obtain an access token
-#define CLOUD_TOKEN   "psExmXxbIXajWD3Voxnu"
+#define CLOUD_TOKEN   "pb7Vc2go03M2TmAdvzYe"
 #define CLOUD_SERVER  "thingsboard.cloud"
 #define CLOUD_PORT    80
 
@@ -531,7 +531,7 @@ void get_gnss_data(void )
   Serial.println("\r\nGNSS: ");
 
 #if 0
-  String gnss_str = "113521.0,42.486973,-83.470669,1.1,281.0,2,12.00,71.0,0.0,120221,07";
+  String gnss_str = "020249.0,42.48779,-83.43078,0.7,271.0,2,234.00,74.0,0.0,140221,09";
 #else
   String gnss_str = modem.getGPSraw();
 #endif
@@ -689,4 +689,3 @@ bool getfield(char * pBuf, char * pField, int idx, int len)
 
     return true;
 }
-
